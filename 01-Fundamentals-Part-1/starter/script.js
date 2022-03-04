@@ -1,3 +1,5 @@
+// # ======SECTION 1=========
+
 /*
 let js = "Mantap";
 console.log("rafi");
@@ -115,7 +117,8 @@ if (fav === 21) {
 }
 */
 
-//* 24 Logical ops 
+//* 24 Logical ops
+/*
 const hasDriverLis = true;
 const hasGoodVis = true;
 
@@ -132,3 +135,71 @@ if (shouldDrive) {
 
 const isOld = false;
 console.log((hasDriverLis || hasGoodVis) && isOld);
+*/
+
+//* 26 Switch
+/*
+const day = "Tuesday";
+
+switch (day) {
+	case "Sunday":
+		console.log("hari ini minggu");
+		break;
+    case "Monday":
+        console.log("ini hari senin");
+        break;
+    case "Tuesday":
+        console.log("ini hari selasa");
+        break;
+	default:
+		console.log("Hari apa?");
+		break;
+}
+*/
+
+// * 28 Ternary
+/*
+//& sama dengan if
+const age = 10;
+age >= 18 ? console.log("Boleh punya SIM") :console.log("Tidak boleh nyetir");
+
+const drink = age >= 18 ? 'Wine' : 'Water' ;
+console.log(drink);
+
+console.log(`Aku pengen minum ${age >= 18 ? "Wine" : "Water"}`);
+*/
+
+// # ======SECTION 2=========
+
+//* 32 Strict mode
+// digunakan agar di conlose ada warning kalo salah
+/* 'use strict'; 
+let hasDriverLis = false;
+const passTest = true;
+
+if (passTest) hasDriverLi = true;
+if (hasDriverLis) console.log("BOleh nyetir");
+*/
+
+// * 33 Function
+/*
+function makan() {
+    console.log("saya makan nasi putih");
+}
+makan();
+
+function buah(pisang,apel) {
+    console.log(pisang,apel);
+    const jus = `saya minum jus ${pisang} buah pisang dan ${apel} buah apel`;
+    return jus;
+}
+const namaBuah =  buah(4,3);
+console.log(namaBuah);
+buah(6,7)
+*/
+
+//* 34 Function Declaration
+function age1(tahun) {
+	const age = 2020 - tahun;
+	return age;
+}

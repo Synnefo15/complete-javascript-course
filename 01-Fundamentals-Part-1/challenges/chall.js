@@ -28,7 +28,7 @@ if (markBMI1 > johnBMI1) {
 */
 
 // * Challenge 3
-
+/*
 console.log("No 1");
 dol = (96+108+89)/3;
 koa = (88+91+110)/3;
@@ -73,3 +73,10 @@ if (dol2 || koa2 >= 100) {
 } else {
     console.log("Nilai tidak mencukupi 100");
 }
+*/
+
+// * Challenge 4
+
+const bill = 40;
+const tip = bill>50 && bill<300 ? 15/100*bill : 20/100*bill;
+console.log(`The bill was ${bill}, the tip ws ${tip} and Total is ${bill+tip}`);
