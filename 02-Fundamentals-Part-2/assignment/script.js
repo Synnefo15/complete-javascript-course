@@ -165,6 +165,7 @@ console.log(`hasil polulasi adalah ${jumlahPersen}`);
 */
 
 // *=== Looping backwards
+/*
 // # harus diselesaikan dulu inner for-nya baru nanti bisa ke outer for
 const listOfNeighbours = [
     ['Canada','Mexico'],
@@ -179,3 +180,19 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
     }
     console.log('--end');
 }
+*/
+
+// *=== The While Loop ===
+const countries = [100, 200, 300, 400];
+const percentage3 = [];
+
+function persentase(angka) {
+	return (angka / 7900) * 100;
+}
+let i = 0;
+while (i < countries.length) {
+	const perc = persentase(countries[i]);
+	percentage3.push(perc);
+	i++;
+}
+console.log(percentage3);

@@ -248,7 +248,7 @@ for (let index = 1; index <= 10; index++) {
 */
 
 // *== 47-looping array breaking
-/*
+
 const rafi = ["rafi", "cahya", 2022 - 2000, "murid", ["gilang", "syta", "ibu"], true];
 
 const types = [];
@@ -269,24 +269,25 @@ const ages = [];
 for (let index = 0; index < years.length; index++) {
 	ages.push(2022 - years[index]); 
 }
+console.log('Ages:');
 console.log(ages);
 
-console.log("===continue===");
-for (let index = 0; index < rafi.length; index++) {
-	if (typeof rafi[index] !== "string") continue;
+// console.log("===continue===");
+// for (let index = 0; index < rafi.length; index++) {
+// 	if (typeof rafi[index] !== "string") continue;
 
-	console.log(rafi[index], typeof rafi[index]);
-}
-console.log("===Break===");
-for (let index = 0; index < rafi.length; index++) {
-	if (typeof rafi[index] === "number") break;
+// 	console.log(rafi[index], typeof rafi[index]);
+// }
+// console.log("===Break===");
+// for (let index = 0; index < rafi.length; index++) {
+// 	if (typeof rafi[index] === "number") break;
 
-	console.log(rafi[index], typeof rafi[index]);
-}
-*/
+// 	console.log(rafi[index], typeof rafi[index]);
+// }
+
 
 // *=== 48-Looping backward
-
+/*
 const rafi = [
 	'Rafi',
 	'Cahya',
@@ -305,5 +306,28 @@ for (let exercise = 0; exercise < 4; exercise++) {
 		console.log(`makan ke-${index}`);
 	}
 }
+*/
+
+// *=== 49-While Loop ===
+/*
+// The while Loop
+for (let rep = 1; rep <= 10; rep++) {
+	console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+}
+
+let rep = 1;
+while (rep <= 10) {
+	// console.log(`WHILE: Lifting weights repetition ${rep} 🏋️‍♀️`);
+	rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+	console.log(`You rolled a ${dice}`);
+	dice = Math.trunc(Math.random() * 6) + 1;
+	if (dice === 6) console.log("Loop is about to end...");
+}
+*/
 
 

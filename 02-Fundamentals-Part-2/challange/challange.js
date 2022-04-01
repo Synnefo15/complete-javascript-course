@@ -63,7 +63,7 @@ const itung = bill => bill >= 50 && bill <= 300 ? bill*0.15:bill*0.2; // fungsi 
 */
 
 // *=== tantangan 3 ===
-
+/*
 const mark = {
         nama : 'Mark miller',
         mass : 78,
@@ -86,3 +86,35 @@ const jonh = {
 };
 
 console.log(`${mark.nama} BMI (${mark.calcBMI()}) is ${mark.calcBMI() < jonh.calcBMI() ? "lower":"higher"} than ${jonh.nama} BMI (${jonh.calcBMI()})`);
+*/
+
+// *=== Tantangan 4 ===
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+const tips = [];
+const totals = [];
+
+function calcTip(bill) {
+	return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+for (let index = 0; index < bills.length; index++) {
+	const tip = calcTip(bills[index]);
+	tips.push(tip);
+	totals.push(tip + bills[index]);
+}
+console.log(`bills : ${bills}\n tips : ${tips} \n total : ${totals}`);
+
+const calcAverage = function (arr) {
+	let sum = 0;
+	for (let index = 0; index < arr.length; index++) {
+		sum += arr[index];
+	}
+	// console.log(sum);
+        return sum/arr.length;
+};
+console.log(calcAverage([2, 3, 7]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
+
